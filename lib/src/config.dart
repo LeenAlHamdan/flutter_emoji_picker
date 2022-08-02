@@ -5,7 +5,7 @@ import 'package:flutter_emoji_picker/src/category_icons.dart';
 import 'package:flutter_emoji_picker/src/emoji_picker.dart';
 
 /// Default Widget if no recent is available
-const DefaultNoRecentsWidget = Text(
+const defaultNoRecentsWidget = Text(
   'No Recents',
   style: TextStyle(fontSize: 20, color: Colors.black26),
   textAlign: TextAlign.center,
@@ -33,7 +33,7 @@ class Config {
       this.showRecentsTab = true,
       this.recentsLimit = 28,
       this.replaceEmojiOnLimitExceed = false,
-      this.noRecents = DefaultNoRecentsWidget,
+      this.noRecents = defaultNoRecentsWidget,
       this.tabIndicatorAnimDuration = kTabScrollDuration,
       this.categoryIcons = const CategoryIcons(),
       this.buttonMode = ButtonMode.MATERIAL});

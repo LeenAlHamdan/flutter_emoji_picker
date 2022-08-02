@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_generic_function_type_aliases, constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_emoji_picker/src/category_emoji.dart';
 import 'package:flutter_emoji_picker/src/config.dart';
@@ -290,8 +292,9 @@ class EmojiPickerState extends State<EmojiPicker> {
               if (category == Category.SMILEYS ||
                   category == Category.ACTIVITIES) {
                 return _updateSkinToneSupport(_emoji);
-              } else
+              } else {
                 return _emoji;
+              }
             }).toList()),
       );
     });

@@ -9,8 +9,12 @@ import 'package:flutter_emoji_picker/src/triangle_shape.dart';
 /// Default EmojiPicker Implementation
 class DefaultEmojiPickerView extends EmojiPickerBuilder {
   /// Constructor
-  DefaultEmojiPickerView(Config config, EmojiViewState state)
-      : super(config, state);
+  const DefaultEmojiPickerView(Config config, EmojiViewState state, {Key? key})
+      : super(
+          config,
+          state,
+          key: key,
+        );
 
   @override
   _DefaultEmojiPickerViewState createState() => _DefaultEmojiPickerViewState();

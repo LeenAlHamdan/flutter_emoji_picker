@@ -6,7 +6,7 @@ import 'package:flutter_emoji_picker/src/emoji_view_state.dart';
 /// Inhert this class to create your own EmojiPicker
 abstract class EmojiPickerBuilder extends StatefulWidget {
   /// Constructor
-  EmojiPickerBuilder(
+  const EmojiPickerBuilder(
     this.config,
     this.state, {
     Key? key,

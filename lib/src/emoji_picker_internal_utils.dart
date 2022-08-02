@@ -13,7 +13,7 @@ import 'recent_emoji.dart';
 /// Helper class that provides internal usage
 class EmojiPickerInternalUtils {
   // Establish communication with native
-  static const _platform = MethodChannel('emoji_picker_flutter');
+  static const _platform = MethodChannel('flutter_emoji_picker');
   static const _emojiVersion = 'emoji_version';
 
   /// Returns true when local emoji list is outdated
@@ -191,7 +191,7 @@ class EmojiPickerInternalUtils {
   Emoji removeSkinTone(Emoji emoji) {
     return emoji.copyWith(
       emoji: emoji.emoji.replaceFirst(
-        RegExp('${SkinTone.values.join('|')}'),
+        RegExp(SkinTone.values.join('|')),
         '',
       ),
     );
